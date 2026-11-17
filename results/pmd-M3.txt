@@ -1,0 +1,24 @@
+[INFO] Scanning for projects...
+[INFO] Loaded 24514 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] Loaded 64 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[INFO] 
+[INFO] ------------------< mn.edu.must.sqat:lab10-dataflow >-------------------
+[INFO] Building lab10-dataflow 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- pmd:3.21.2:pmd (default-cli) @ lab10-dataflow ---
+[WARNING] Unable to locate Source XRef to link to - DISABLED
+[INFO] PMD version: 6.55.0
+[INFO] Rendering content with org.apache.maven.skins:maven-default-skin:jar:1.3 skin.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.915 s
+[INFO] Finished at: 2026-11-17T10:12:14+08:00
+[INFO] ------------------------------------------------------------------------
+
+--- target/pmd.xml (excerpt) ---
+<violation beginline="49" endline="49" begincolumn="13" endcolumn="17" rule="UnusedLocalVariable" ruleset="Best Practices" package="mn.edu.must.sqat" class="DataFlowTargets" method="bonus" variable="total" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'total'.
+</violation>
