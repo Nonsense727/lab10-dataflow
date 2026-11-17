@@ -537,13 +537,12 @@ README-ийн бүтцийг гаргахад туслалцаа авсан. AI-
 README-д бичсэн бүх тоо (`results/*.txt`, `results/*.csv`) нь локал
 орчинд бодитоор ажиллуулсан Maven/JaCoCo/PMD гаралтаас авсан; гараар
 зассан, таамагласан тоо, хуурамч `Total time`/`Finished at` байхгүй.
-AI-ийн өгсөн заавар, бөглөөгүй загварын орлуулга (`[Таны нэр]`, `<...>`)
-README-д үлдээгээгүй.
+AI-ийн өгсөн заавар, бөглөөгүй загварын орлуулга README-д үлдээгээгүй.
 
 ## 9. Ажлын явц (commit-ийн түүх)
 
 Ажлын үе шат бүрийг дуусмагц нь тусдаа commit хийсэн; бүх файлыг нэг
-дор оруулаагүй. Commit-ууд нь бодит ажлын явцад, 10:05–10:17 хооронд
+дор оруулаагүй. Commit-ууд нь бодит ажлын явцад, 10:05-аас эхлэн
 үе шаттайгаар үүссэн (гараар зассан, бүхэл минутласан цаг байхгүй):
 
 | # | Огноо, цаг (+08) | Hash | Commit |
@@ -559,7 +558,8 @@ README-д үлдээгээгүй.
 | 9 | 2026-11-17 10:12 | `86e09d0` | Section C M3: dead def total survives 12/12 tests; PMD UnusedLocalVariable (line 49); src restored |
 | 10 | 2026-11-17 10:17 | `0289785` | Section C final: mvn verify green (12 tests), jacoco-final branch 16/16, line 23/24 |
 | 11 | 2026-11-17 10:17 | `4204c64` | README: final report (DU tables, CFG, coverage, fault seeding, conclusion) |
-| 12 | энэ commit | — | README: clarify infeasible p-use sides (37→42 F, 37→53 T) and 0-iteration pair wording |
+| 12 | 2026-11-17 10:19 | `6fc15d8` | README: clarify infeasible p-use sides (37→42 F, 37→53 T) and 0-iteration pair wording |
+| 13 | энэ commit | — | README: final wording (remove placeholder literals, time range) |
 
 `.gitignore` нь `target/`, `.idea/`, `*.iml`, `.vscode/`, `.DS_Store`-ийг
 хасдаг тул build-ийн гаралт, IDE-ийн файл репод ороогүй. Багшийн `.docx`
