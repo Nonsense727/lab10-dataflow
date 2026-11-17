@@ -55,6 +55,12 @@ class BonusTest {
     }
 
     @Test
+    @DisplayName("M2 kill: present 6 but longest streak 4 -> line 53 F, score stays 5 (bug best=present gives 8)")
+    void du_totalPresent6_streak4_noStreakBonus() {
+        assertEquals(5, DataFlowTargets.bonus(new int[]{1, 1, 1, 1, 0, 1, 1}, 6));
+    }
+
+    @Test
     @DisplayName("all-DU-pairs: null attendance -> p-use attendance(31,32) T side")
     void du_null_throws() {
         assertThrows(IllegalArgumentException.class,
